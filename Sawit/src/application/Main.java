@@ -26,6 +26,9 @@ public class Main extends Application {
 		
 		Button viewListingButton = new Button("View");
 		Button addListingButton = new Button("Add");
+		addListingButton.setOnAction(e -> {
+			Add.display();
+		});
 		Button removeListingButton = new Button("Remove");
 		Button editListingButton = new Button("Edit");
 		viewListingButton.setMinWidth(80);
