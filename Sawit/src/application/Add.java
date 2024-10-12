@@ -57,6 +57,11 @@ public class Add {
 		Button addButton = new Button("Add");
 		addButton.setMinWidth(80);
 		addButton.setOnAction(e -> {
+			//To add: Validate input
+			String name = listingNameField.getText();
+			String author = authorNameField.getText();
+			int year = Integer.parseInt(yearField.getText());
+			Movie newMovie = new Movie(name, author, year, "horror", 5);
 			addWindow.close();
 		});
 		
